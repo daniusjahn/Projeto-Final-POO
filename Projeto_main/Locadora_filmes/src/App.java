@@ -1,26 +1,24 @@
 public class App {
     public static void main(String[] args) throws Exception {
-        Filme filmes1 = new Filme();
-        System.out.println("-----------------------------");
-        filmes1.cadastrarFilme("O Poderoso Chefão", "Drama", 1);
-        filmes1.cadastrarFilme("Vingadores: Ultimato", "Ação", 2);
-        filmes1.cadastrarFilme("A Origem", "Ficção Científica", 3);
-        System.out.println("-----------------------------");
+            Locadora locadora = new Locadora();
 
-        filmes1.listarFilmes();
+            Menu menu = new Menu(locadora);
 
-        System.out.println("-----------------------------");
+            Relatorio relatorio = new Relatorio();
 
-        filmes1.alugarFilme(3);
-        filmes1.alugarFilme(2);
-        System.out.println("-----------------------------");
-        filmes1.mostrarFilmesdisponiveis();
-        System.out.println("-----------------------------");
+            locadora.cadastrarFilme("Vingadores", "Ação", 1);
+            locadora.cadastrarFilme("Titanic", "Romance", 2);
 
-        filmes1.devolverFilme(3);
-        System.out.println("-----------------------------");
-        filmes1.mostrarFilmesdisponiveis();
-        System.out.println("-----------------------------");
-        filmes1.sair();
+            locadora.listarFilmes();
+
+            menu.alugarFilme(1);
+
+            relatorio.mostrarDisponiveis(locadora);
+
+            relatorio.mostrarAlugados(locadora);
+
+            menu.devolverFilme(1);
+
+            menu.sair();
     }
 }
