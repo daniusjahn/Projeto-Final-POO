@@ -75,6 +75,7 @@ App.java
 
 ## 💻 Exemplo de Saída
 
+```text
 💻 Exemplo de Execução
 
 ===== LOCADORA DE FILMES =====
@@ -139,6 +140,7 @@ Filme devolvido com sucesso!
 Escolha uma opção: 0
 
 Obrigado por usar a locadora.
+```
 
 ---
 
