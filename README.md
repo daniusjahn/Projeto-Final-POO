@@ -6,6 +6,8 @@ Um projeto simples desenvolvido em Java para simular o funcionamento de uma loca
 
 ## 📋 Funcionalidades
 
+✅ Menu interativo via terminal
+
 ✅ Cadastro de filmes
 
 ✅ Listagem de filmes cadastrados
@@ -73,25 +75,70 @@ App.java
 
 ## 💻 Exemplo de Saída
 
-```text
+💻 Exemplo de Execução
+
+===== LOCADORA DE FILMES =====
+1 - Cadastrar Filme
+2 - Listar Filmes
+3 - Alugar Filme
+4 - Devolver Filme
+5 - Mostrar Disponíveis
+6 - Mostrar Alugados
+0 - Sair
+
+Escolha uma opção: 1
+
+Nome do filme: Vingadores
+Gênero do filme: Ação
+Código do filme: 1
+
 Filme cadastrado com sucesso!
+
+===== LOCADORA DE FILMES =====
+Escolha uma opção: 1
+
+Nome do filme: Titanic
+Gênero do filme: Romance
+Código do filme: 2
+
 Filme cadastrado com sucesso!
+
+===== LOCADORA DE FILMES =====
+Escolha uma opção: 2
 
 Vingadores - 1 - Disponível
 Titanic - 2 - Disponível
 
+===== LOCADORA DE FILMES =====
+Escolha uma opção: 3
+
+Digite o código do filme: 1
+
 Filme alugado com sucesso!
+
+===== LOCADORA DE FILMES =====
+Escolha uma opção: 5
 
 Filmes Disponíveis:
 Titanic - 2
 
+===== LOCADORA DE FILMES =====
+Escolha uma opção: 6
+
 Filmes Alugados:
 Vingadores - 1
 
+===== LOCADORA DE FILMES =====
+Escolha uma opção: 4
+
+Digite o código do filme: 1
+
 Filme devolvido com sucesso!
 
+===== LOCADORA DE FILMES =====
+Escolha uma opção: 0
+
 Obrigado por usar a locadora.
-```
 
 ---
 
